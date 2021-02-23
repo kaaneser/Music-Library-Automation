@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>albumcikart</class>
+ <widget class="QWidget" name="albumcikart">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Albüm Çıkart - Music Library</string>
+  </property>
+  <widget class="QComboBox" name="tur_combo">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>141</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tür Belirleyin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Akustik</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jazz</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Latin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>R&amp;B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Elektronik</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Country</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pop</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rock</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Blues</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rap</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="albumad">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Albüm Adı</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tur">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tür</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="album_input">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="isSingle_check">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>60</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Single?</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="tristate">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="platformlar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>330</y>
+     <width>191</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="sarkiad_input">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sarkiIndis">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Şarkı Adı:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sarkiekle_buton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>230</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="platformList">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>330</y>
+     <width>191</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Spotify</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Apple Music</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Soundcloud</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Deezer</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Youtube Music</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="platformlarin">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>310</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Platformların:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="platformlistesi">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>310</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Platform Listesi:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="albumcikart_buton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>400</y>
+     <width>161</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Albüm Çıkart!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sarkicikart_buton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>250</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Çıkart</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pekle_buton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>460</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ekle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pcikart_buton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>460</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Çıkart</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="sarkiListe">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>331</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
